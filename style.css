@@ -3,9 +3,9 @@
     font-family: Poppins, sans-serif;
     scroll-behavior: smooth;
     flex-direction: column;
-    margin: 0px;
-    padding: 0px;
-    background-color: black;
+    margin: 0;
+    padding: 0;
+    background-color: #d4dee3;
 }
 
 #body1 {
@@ -20,11 +20,8 @@
 
 
 
-/* header */
 
-.header{   
-height: 200px;
-}
+/* header */
 
 
 .header .header1-contenu {
@@ -161,6 +158,7 @@ border-radius: 2px  solid;
 .home2 img {
   width: 400px;
   height: auto;
+  object-fit: cover;
   border-radius: 20px;
   box-shadow: 0 0 25px rgba(255, 255, 255, 0.2);
   transition: transform 0.4s ease, box-shadow 0.4s ease;
@@ -176,7 +174,6 @@ border-radius: 2px  solid;
   background: rgba(255, 255, 255, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.2);
   padding: 30px;
-  border-radius: 25px;
   backdrop-filter: blur(12px);
   box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
 }
@@ -289,6 +286,8 @@ border-radius: 2px  solid;
   background: url("images/Rectangle 501 (1).png") center no-repeat;
   border-radius: 40px;
   padding: 20px 20px 60px 20px;
+  color: white;
+  text-align: left;
 }
 
 .card img {
@@ -537,6 +536,87 @@ padding : 4rem  20px  0px 20px;
   top :0;
   right: 0;
 }
+
+
+#tit {
+  position: relative;
+  top: 0px;   /* kay3rf l element ytl3 ola yt7t */
+  bottom: 300px;
+  left: 20px;  /* kay3rf l element yimchi l yssar ola lymin */
+
+}
+
+#tit p {
+  font-size: x-large;
+}
+
+
+.cartes {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(135deg, #5a5280, #3b3165);
+    color: #fff;
+    padding: 60px 80px;
+    border-radius: 40px;
+    flex-wrap: wrap;
+    /* margin-top: 400px; */
+}
+
+.carte {
+  display: block;
+    max-width: 500px;
+    background: gray;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 30px;
+    border-radius: 25px;
+    list-style: none;
+    text-align: center;
+    z-index: 2000000;
+}
+
+.s_carte {
+    max-width: 500px;
+    background-color:  rgb(44, 43, 45);
+    border: 1px solid rgba(15, 14, 14, 0.2);
+    padding: 30px;
+    border-radius: 25px;
+    list-style: none;
+    margin: 10px;
+    z-index: 10000;
+}
+
+.planets {
+     
+   width:auto ;
+   height: auto;
+   background-color: white;
+   padding-left: 30px;
+   padding-right: 30px;
+   margin: 0;
+}
+
+
+
+.planets p {
+  text-align: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-color: gold;
+}
+
+.welcome {
+  background-image: url('images/planet-image/les\ planets.png'); 
+  background-size: cover; 
+  background-position: center;
+  background-repeat: no-repeat; 
+  height: 100vh;
+  width: 100%; 
+  margin: 0;
+  padding: 0;
+
+}
+
+
 
 
 
