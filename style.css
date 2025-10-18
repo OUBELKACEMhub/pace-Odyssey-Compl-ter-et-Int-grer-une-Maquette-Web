@@ -17,6 +17,15 @@
     padding: 0px;
     background-color: #2e4254;
 }
+#body {
+  overflow-x: hidden;
+    font-family:fantasy;
+    scroll-behavior: smooth;
+    flex-direction: column;
+    margin: 0px;
+    padding: 0px;
+    background-color: #3f9597;
+}
 
 
 
@@ -77,7 +86,7 @@
     
 }
 
-.nav-links a {
+.nav-links li a {
   font-family: Arial, Helvetica, sans-serif;
 text-decoration: none;
  font-weight:300;
@@ -87,7 +96,7 @@ padding: 4px;
 }
 
 
-.nav-links a:hover {
+.nav-links li a:hover {
   color: #bab9c0;
   transform: 0.2s ;
   background-color: #073653;
@@ -95,12 +104,29 @@ border-radius: 20px;
 padding: 8px;
 }
 
+.nav-links li a.active {
+    color: #bab9c0;
+  transform: 0.2s ;
+  background-color: #073653;
+border-radius: 20px;
+padding: 8px;
+}
+
+
 
 #abt {
   border-radius: 20px;
   color: white;
   background-color: #060b0d;
   padding: 10px;
+}
+
+.nav-links li #abt.active {
+    color: #0d0c11;
+  transform: 0.2s ;
+  background-color: #a6abae;
+border-radius: 20px;
+padding: 8px;
 }
 
 .links-social {
@@ -438,32 +464,35 @@ background-color: black;
   height: 32px;
 }
 
-.t1 {
-  width: 100%;
-  height: 700px;
-  padding: 100px 20px;
-  background: url("images/stars-space-darkness.jpg") center / cover no-repeat;
+
+.widthtitle{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+    gap: 10px;
+    border-radius: 2px;
 }
-#widthtitle {
- font-family: 'Courier New', Courier, monospace;
+.widthtitle h1 {
+
+  font-family: 'Courier New', Courier, monospace;
   font-size: 3rem;
-  text-align: center;
+  text-align: left;
   letter-spacing: 2px;
   text-transform: uppercase;
   color: white;
-  text-shadow: 0 0 20px rgba(79, 167, 238, 0.7);
-  
+  text-shadow: 0 0 20px rgba(79, 167, 238, 0.7); 
 }
-
+.widthtitle img{
+     width: ;
+}
 .missions {
   color: white;
   text-align: center;
   padding-left: 500px;
   background-color: rgba(96, 109, 120, 0.5);
-padding : 4rem  20px  0px 20px;
+padding : 5rem  20px  0px 20px;
 }
 
-.m
 
 .mission1{
   display: flex;
@@ -471,7 +500,7 @@ padding : 4rem  20px  0px 20px;
   height: auto;
   justify-content:space-around;
   align-items: center;
-  gap :100px;
+  gap :10px;
   padding: 50px 20px;
    box-shadow: 0 0 25px rgba(1, 7, 12, 0.3);
 }
@@ -842,6 +871,81 @@ button {
   }
 }
 
+
+/* about style */
+
+.content {
+  width: 1400px;
+  height: 1400px;
+  background-color: #260785;
+  display: grid;
+  justify-content: space-between;
+  gap: 10px;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: repeat(4,1fr);
+  margin-left: 50px;
+  margin-top: 50px;
+}
+.contenu1,.contenu5 {
+  grid-column: 1/-1;
+}
+
+.contenu2 , .contenu3 , .contenu4 {
+  grid-row: 2/4;
+
+}
+.contenu1  {
+   background-color: #473a7c;
+    
+}
+
+.contenu2 {
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(2,1fr);
+    background-color: white;
+    justify-content: space-between;
+    gap: 20px;
+    border-radius: 2%;
+
+}
+
+
+
+
+
+.contenu5 {
+  background-color: #473a7c;
+}
+
+.contenu2 {
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(2,1fr);
+    background-color: white;
+    justify-content: space-between;
+    gap: 20px;
+    border-radius: 2%;
+
+}
+
+.contenu3 {
+     background-color: #6a6f6f;
+
+}
+
+
+
+.contenu2  img {
+   width: 600px;
+   height: 530px;
+}
+
+.Our-mission {
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+}
+ 
 
 
 

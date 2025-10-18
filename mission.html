@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="style.css">
     <title>About-space-Odyessey</title>
 </head>
-<body  id="body1">
+<body  id="body2">
     <nav class="header">
     <div class="header1-contenu">
       <div class="logo1">
@@ -48,10 +48,10 @@
       </ul>
       </div>
 </nav>
-<div class="t1">
-        <h1 id="widthtitle">Missions Spatiales Célèbres et RécentesMissions Spatiales Célèbres et Récentes 🚀 </h1>
-         
-</div>
+ <div class="widthtitle">
+  <img src="images/Space-odyssey_700x525.jpg" alt="Space-odyssey_700x525">
+  <h1>Missions Spatiales Célèbres et RécentesMissions Spatiales Célèbres et Récentes 🚀 </div>
+<div class="t1"></div>
   <div class="missions">
         <div class="mission1">
            
@@ -204,7 +204,17 @@
   </footer>
 
 
+<script>
+  const currentPage = window.location.pathname.split('/').pop();
+  const links = document.querySelectorAll('.nav-links a');
 
+  links.forEach(link => {
+    const linkPage = link.getAttribute('href');
+    if (linkPage === currentPage) {
+      link.classList.add('active');
+    }
+  });
+</script>
 
     
 </body>
