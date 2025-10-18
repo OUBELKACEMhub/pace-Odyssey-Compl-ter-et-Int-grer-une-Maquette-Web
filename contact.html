@@ -39,62 +39,47 @@
       </div>
 
       <ul class="nav-links">
-        <li><a href="index.html">HOME</a></li>
-        <li><a href="planets.html">PLANETS</a></li>
-        <li><a href="mission.html">MISSION</a></li>
-        <li><a href="about.html">ABOUT</a></li>
-        <li><a href="contact.html">CONTACT US</a></li>
+        <li><a href="index.html" >HOME</a></li>
+        <li><a href="planets.html" >PLANETS</a></li>
+        <li><a href="mission.html" >MISSION</a></li>
+        <li><a href="about.html" >ABOUT</a></li>
+        <li><a href="contact.html" id="abt" >CONTACT US</a></li>
       </ul>
       </div>
 </nav>
 
- <!-- Main Content -->
 
- 
-    <div class="contenu3">
-        <img src="images/unsplash_crygQ7In_FE (1).png" alt="">
-    <main class="main-content">
-        <div class="form-container">
-            <h2 class="form-title">Formulaire de Contact</h2>
-            <form id="contactForm">
-                <div class="form-group">
-                    <label for="firstName">Prénom</label>
-                    <input type="text" id="firstName" class="form-control" required>
-                </div>
 
-                <div class="form-group">
-                    <label for="lastName">Nom</label>
-                    <input type="text" id="lastName" class="form-control" required>
-                </div>
+<section class="sel-contact">
+  <div class="contact-image"></div>
 
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" class="form-control" required>
-                </div>
+  <div class="contact">
+    <form>
+      <div class="formg">
+        <input type="text" placeholder="First Name">
+        <input type="text" placeholder="Last Name">
+      </div>
 
-                <div class="form-group">
-                    <label for="phone">Téléphone</label>
-                    <input type="tel" id="phone" class="form-control">
-                </div>
+      <div class="formg">
+        <input type="email" placeholder="Email">
+        <input type="text" placeholder="Phone Number">
+      </div>
 
-                <div class="form-group">
-                    <label for="subject">Sujet</label>
-                    <input type="text" id="subject" class="form-control" required>
-                </div>
-
-                <div class="form-group">
-                    <label for="message">Message</label>
-                    <textarea id="message" class="form-control" required></textarea>
-                </div>
-
-                <button type="submit" class="btn">Envoyer le message</button>
-            </form>
+      <div class="formg">
+        <label>Select Subject?</label>
+        <div>
+          <input type="radio" name="subject"> General Inquiry
+          <input type="radio" name="subject"> Support
+          <input type="radio" name="subject"> Feedback
         </div>
-    </div>
+      </div>
 
-    <div class="webchat"></div>
+      <textarea placeholder="Message"></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+</section>
 
-    </div>
 
 <footer>
 

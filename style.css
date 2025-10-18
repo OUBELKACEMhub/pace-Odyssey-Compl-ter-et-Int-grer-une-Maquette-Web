@@ -5,7 +5,7 @@
     flex-direction: column;
     margin: 0;
     padding: 0;
-    background-color: #d4dee3;
+    background-color: #212527;
 }
 
 #body1 {
@@ -83,6 +83,7 @@ text-decoration: none;
  font-weight:300;
 color: black;
 padding: 4px;
+  border-bottom: 2px solid darkgoldenrod;
 }
 
 
@@ -90,7 +91,16 @@ padding: 4px;
   color: #bab9c0;
   transform: 0.2s ;
   background-color: #073653;
-border-radius: 2px  solid;
+border-radius: 20px;
+padding: 8px;
+}
+
+
+#abt {
+  border-radius: 20px;
+  color: white;
+  background-color: #060b0d;
+  padding: 10px;
 }
 
 .links-social {
@@ -426,28 +436,28 @@ background-color: black;
   height: 32px;
 }
 
-
-
-
-
+.t1 {
+  width: 100%;
+  height: 700px;
+  padding: 100px 20px;
+  background: url("images/stars-space-darkness.jpg") center / cover no-repeat;
+}
 #widthtitle {
-  display: flex;
-  width: 600px;
-  height: 100%;
-  text-align: center;
-  margin-left: 30% ;
  font-family: 'Courier New', Courier, monospace;
-  font-size: 1rem;
+  font-size: 3rem;
+  text-align: center;
   letter-spacing: 2px;
   text-transform: uppercase;
   color: white;
   text-shadow: 0 0 20px rgba(79, 167, 238, 0.7);
+  
 }
 
 .missions {
   color: white;
   text-align: center;
   padding-left: 500px;
+      /* margin-top: 490px; */
 }
 
 .missions {
@@ -480,6 +490,14 @@ padding : 4rem  20px  0px 20px;
  padding: 20px;
  color: #eaeff1;
  text-shadow: 0 0 20px rgba(32, 143, 235, 0.7);
+}
+.desc1 {
+  display: block;
+ padding-bottom: 500px;
+ list-style: none;
+ padding: 20px;
+ color: #eaeff1;
+ text-align: center;
 }
 .mission2 {
  display: flex;
@@ -619,98 +637,211 @@ padding : 4rem  20px  0px 20px;
 
 /* contact style*/
 
-.contenu3 {
-    display: flex;
-    justify-content :space-between;
+
+
+
+.sel-contact {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* left: image, right: form */
+  height: 100vh;
+  width: 1500px;
+  background-color: gray;
+  padding: 50px;
+
+}
+
+.contact-image {
+  background: url("images/unsplash_crygQ7In_FE\ \(1\).png") center/cover no-repeat;
+}
+
+.contact {
+  background-color: #2b2f31;
+  color: white;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.formg {
+  display: flex;
+  gap: 20px;
+}
+
+input, textarea, button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+button {
+  background-color: darkgoldenrod;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+
+@media (max-width: 992px) {
+  .sel-contact {
+    grid-template-columns: 1fr; /* stack vertically */
+    height: auto;
+    padding: 30px;
+  }
+
+  .contact-image {
+    height: 300px; /* fixe une hauteur à l’image */
+  }
+
+  .contact {
+    padding: 30px;
+  }
+
+  .formg {
+    flex-direction: column;
+  }
+}
+
+/* Responsive Design  */
+@media (max-width: 600px) {
+  .sel-contact {
+    padding: 20px;
+  }
+
+  .contact {
+    padding: 20px;
+  }
+
+  input,
+  textarea,
+  button {
+    font-size: 14px;
+  }
+
+  button {
+    padding: 12px;
+  }
+}
+
+/* =============== Responsive Design =============== */
+
+/* Petits écrans : téléphones */
+@media (max-width: 768px) {
+
+  .header .header1-contenu,
+  .header2-contenu,
+  .nav-links,
+  .home2,
+  .section3,
+  .cards,
+  .cards1,
+  .mission1,
+  .mission3,
+  .cartes,
+  .contenu3 {
+    flex-direction: column;
     align-items: center;
-    width: 1600px;
-    height: 1000px;
-    padding: 40px;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .nav-links {
+    gap: 20px;
+    padding: 0;
+  }
+
+  .nav-links a {
+    font-size: 0.9rem;
+  }
+
+  #shead1 input {
+    width: 200px;
+  }
+
+  .home2 img,
+  .section3 img,
+  .mission1 img,
+  .mission3 img,
+  .mission4 img {
+    width: 100%;
+    height: auto;
+  }
+
+  .card, .card1, .card3, .carte, .s_carte, #text {
+    max-width: 100%;
+    padding: 20px;
+  }
+
+  .missions {
+    padding: 2rem 10px;
+  }
+
+  #widthtitle {
+    width: 100%;
+    margin-left: 0;
+    font-size: 0.9rem;
+  }
+
+  .head1, .head2 {
+    flex-direction: column;
     gap: 10px;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .social-link {
+    margin-left: 0;
+    justify-content: center;
+  }
+
+  .contenu3 {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+  }
+
+  .form-container {
+    width: 90%;
+    height: auto;
+    padding: 1rem;
+  }
 }
 
+/* Écrans moyens : tablettes */
+@media (max-width: 1024px) {
+  .header .header1-contenu,
+  .header2-contenu {
+    gap: 40px;
+    flex-wrap: wrap;
+  }
 
- .main-content {
-            min-height: calc(100vh - 140px);
-            padding: 2rem;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
+  .home2, .section3, .cartes, .cards {
+    flex-wrap: wrap;
+    padding: 40px 20px;
+  }
 
-        .form-container {
-    background: white;
-    padding: 0rem 2rem;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    margin: 2rem auto;
-    max-width: 700px;
-    width: 500px;
-    height: 750px;
-    padding-bottom: 100px;
+  .mission1 img, .mission3 img {
+    width: 90%;
+    height: auto;
+  }
+
+  .footer-links {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .social-link {
+    margin-left: 0;
+  }
 }
-  
-
-        .form-title {
-            text-align: center;
-            margin-bottom: 2rem;
-            color: #333;
-            font-size: 2rem;
-        }
-
-        .form-group {
-            margin-bottom: 1.5rem;
-        }
-
-        .form-group label {
-            display: block;
-            margin-bottom: 0.5rem;
-            font-weight: bold;
-            color: #555;
-        }
-
-        .form-control {
-            width: 100%;
-            padding: 1rem;
-            border: 2px solid #e1e5e9;
-            border-radius: 10px;
-            font-size: 1rem;
-            transition: all 0.3s ease;
-            background: #f8f9fa;
-        }
-
-        .form-control:focus {
-            outline: none;
-            border-color: #667eea;
-        }
-
-        textarea.form-control {
-            resize: vertical;
-            min-height: 120px;
-        }
-
-        .btn {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 0.75rem 2rem;
-            border: none;
-            border-radius: 5px;
-            font-size: 1rem;
-            cursor: pointer;
-            transition: transform 0.3s ease;
-            width: 100%;
-        }
-
-        .btn:hover {
-            transform: translateY(-2px);
-        }
-
-
-
-
-
-
-
-
 
 
 
