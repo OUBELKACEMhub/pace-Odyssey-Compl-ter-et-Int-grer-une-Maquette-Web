@@ -5,7 +5,7 @@
     flex-direction: column;
     margin: 0;
     padding: 0;
-    background-color: #d0d9dd;
+    background-color: white;
 }
 
 #body1 {
@@ -877,7 +877,7 @@ button {
 .content {
   width: 1400px;
   height: 1700px;
-  background-color: white;
+  background-color: rgb(24, 24, 21);
   display: grid;
   justify-content: space-between;
   gap: 10px;
@@ -899,31 +899,16 @@ button {
   
 }
 
-.contenu2 {
-    display: grid;
-    grid-template-columns: repeat(1,1fr);
-    grid-template-rows: repeat(2,1fr);
-    background-color: white;
-    justify-content: space-between;
-    gap: 20px;
-    border-radius: 2%;
-
-}
-
-
-
-
-
 
 
 .contenu2 {
     display: grid;
     grid-template-columns: repeat(1.2,1.2fr);
     grid-template-rows: repeat(2,1fr);
-    background-color: white;
+    background-color: #cdd6d6;
+    border-radius: 2%;
     justify-content: space-between;
     gap: 18px;
-    border-radius: 2%;
 
 }
 
@@ -936,7 +921,7 @@ button {
 
 .contenu2  img {
    width: 600px;
-   height: 530px;
+   height: 630px;
 }
 
 .contenu4 {
@@ -944,7 +929,9 @@ button {
 text-align: left;
 padding-top: 50px;
 line-height: 2rem;
- border-radius: 2%;
+background-color: #cdd6d6;
+border-radius: 2%;
+
 }
 
 .contenu5 {
