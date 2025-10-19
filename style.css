@@ -19,7 +19,7 @@
 }
 #body2 {
   overflow-x: hidden;
-    font-family:fantasy;
+    font-family:'Courier New', Courier, monospace;
     scroll-behavior: smooth;
     flex-direction: column;
     margin: 0px;
@@ -479,14 +479,14 @@ background-color: black;
   text-align: left;
   letter-spacing: 2px;
   text-transform: uppercase;
-  color: white;
+  color: rgb(9, 9, 9);
   text-shadow: 0 0 20px rgba(79, 167, 238, 0.7); 
 }
 .widthtitle img{
      width: ;
 }
 .missions {
-  color: white;
+  color: rgb(19, 2, 2);
   text-align: center;
   padding-left: 500px;
   background-color: rgba(96, 109, 120, 0.5);
@@ -563,6 +563,8 @@ padding : 5rem  20px  0px 20px;
  padding-bottom: 500px;
  list-style: none;
  padding: 20px;
+ color: #060b0d;
+ font-weight: bold;
 }
 
 
@@ -876,7 +878,7 @@ button {
 
 .content {
   width: 1400px;
-  height: 1700px;
+  height: 1800px;
   background-color: rgb(24, 24, 21);
   display: grid;
   justify-content: space-between;
